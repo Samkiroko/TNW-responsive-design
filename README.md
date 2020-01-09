@@ -14,9 +14,9 @@ To get a local copy up and running follow these simple example steps:
     Explore and change values to see what happens!🤓
 
 
-## 🏠 [Homepage](https://github.com/Flakster/Apple-page-clone)
+## 🏠 [Homepage](https://github.com/Samkiroko/TNW-responsive-design)
 
-## ⭐️ See a live demo [here](https://flakster.github.io/Apple-page-clone/)
+## ⭐️ See a live demo [here](https://ecstatic-nobel-56648b.netlify.com/)
 
 ## 🧐 Validators:
 
