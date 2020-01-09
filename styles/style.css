@@ -12,8 +12,39 @@ h2 a {
   color: #f42;
 }
 
+.latest-deals-item {
+  position: relative;
+  height: auto;
+}
+
+.latest-deals-item a {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
 h2 a:hover {
   color: #000;
+}
+
+.more-from-category li a {
+  color: #555;
+}
+
+.more-from-category li a:hover {
+  color: #000;
+}
+
+.more-from-category li {
+  display: block;
+  position: relative;
+  padding: 6px 0 6px 14px;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  border-bottom: 1px solid #eee;
 }
 
 /* Header */
@@ -25,6 +56,59 @@ h2 a:hover {
   height: 32px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   background: #131313;
+}
+
+.footer-nav li a {
+  color: #aaa;
+}
+
+.latest-deals header a {
+  font-size: 16px;
+  color: #f42;
+  font-family: sans-serif;
+}
+
+.latest-deals header h2 a {
+  margin-bottom: 14px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.latest-deals header a:hover {
+  color: #000;
+}
+
+.footer-nav li a:hover {
+  color: #fff;
+}
+
+.footer-nav li {
+  margin: 0 6px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.social li {
+  padding: 6px;
+}
+
+.latest-deals-item a img {
+  width: 100%;
+  height: auto;
+}
+
+.social li img {
+  border-radius: 50%;
+}
+
+.social li img:hover {
+  opacity: 0.5;
+}
+
+.top-links ul li a {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 13px;
 }
 
 .main-nav {
@@ -41,11 +125,6 @@ h2 a:hover {
 
 .top-links ul li {
   margin: 6px;
-}
-
-.top-links ul li a {
-  color: hsla(0,0%,100%,.6);
-  font-size: 13px;
 }
 
 .top-links ul li a:hover {
@@ -88,7 +167,7 @@ h2 a:hover {
   height: 18px;
   padding: 15px;
   transform: scaleX(-1);
-  opacity: .6;
+  opacity: 0.6;
   border-right: 1px solid #eee;
 }
 
@@ -114,7 +193,8 @@ h2 a:hover {
 }
 
 @media only screen and (max-width: 760px) {
-  .top-links, .main-header nav ul {
+  .top-links,
+  .main-header nav ul {
     display: none;
   }
 
@@ -150,17 +230,18 @@ h2 a:hover {
 .cover:first-child {
   grid-row: 1 / span 2;
   background-image:
-  linear-gradient(170deg, rgba(246,7,7,1) 0%, rgba(0,0,0,0) 65%), url('../images/rickmorty.jpg');
+    linear-gradient(170deg, rgba(246, 7, 7, 1) 0%, rgba(0, 0, 0, 0) 65%),
+    url('../images/rickmorty.jpg');
   background-size: cover;
 }
 
 .cover:nth-child(2) {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/brooklyn.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/brooklyn.jpg);
   background-size: cover;
 }
 
 .cover:nth-child(3) {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/snapchat.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/snapchat.png);
   background-size: cover;
 }
 
@@ -181,7 +262,8 @@ h2 a:hover {
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 80%);}
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 80%);
+}
 
 .cover header h5 {
   margin: 0 20px 5px 20px;
@@ -199,7 +281,7 @@ h2 a:hover {
 
 .cover:first-child header h2 {
   font-size: 56px;
-  letter-spacing: -.015em;
+  letter-spacing: -0.015em;
 }
 
 .author-data {
@@ -210,7 +292,7 @@ h2 a:hover {
   margin-right: 10px;
   font-family: sans-serif;
   font-size: 12px;
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .author-data li img {
@@ -221,7 +303,7 @@ h2 a:hover {
 }
 
 .author-data li a {
-  color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .author-data li a:hover {
@@ -254,7 +336,7 @@ h2 a:hover {
   }
 
   .cover:first-child {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/rickmorty.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/rickmorty.jpg);
   }
 
   .cover header h5,
@@ -267,7 +349,7 @@ h2 a:hover {
   }
 
   .cover:first-child header h2 {
-  font-size: 40px;
+    font-size: 40px;
   }
 }
 
@@ -292,10 +374,12 @@ h2 a:hover {
   }
 }
 
-
 /* Latest News */
 
-.latest, .funding, .categories, .latest-deals {
+.latest,
+.funding,
+.categories,
+.latest-deals {
   margin: 80px auto 0 auto;
   max-width: 1176px;
 }
@@ -309,7 +393,9 @@ h2 a:hover {
   font-weight: 700;
 }
 
-.latest-grid, .funding-grid, .latest-deals-grid {
+.latest-grid,
+.funding-grid,
+.latest-deals-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(224px, 270px));
   justify-content: center;
@@ -344,7 +430,7 @@ h2 a:hover {
   color: #aaa;
 }
 
-.latest-item ul li:first-child:after {
+.latest-item ul li:first-child::after {
   content: "\B7";
   display: inline-block;
   margin-left: 4px;
@@ -410,11 +496,11 @@ h2 a:hover {
 }
 
 .funding-img {
- position: absolute;
- top: 10px;
- left: 10px;
- width: 60px;
- height: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 .funding-links {
@@ -459,7 +545,7 @@ h2 a:hover {
 
 .funding-header-bottom {
   height: 60px;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
 }
 
 .funding-header-bottom h4,
@@ -480,7 +566,7 @@ h2 a:hover {
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .funding-category {
@@ -506,7 +592,7 @@ h2 a:hover {
 .funding-story {
   display: block;
   padding: 15px;
-  border-top: 1px solid rgba(255,68,34,.25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
   font-family: sans-serif;
   font-size: 12px;
   line-height: 20px;
@@ -604,7 +690,7 @@ h2 a:hover {
 }
 
 .category-header h3 a:hover {
-  box-shadow: inset 0 -1px 0 hsla(0,0%,100%,.3);
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.3);
 }
 
 .category-header ul li {
@@ -612,7 +698,7 @@ h2 a:hover {
   font-weight: 700;
 }
 
-.category-header ul li:first-child:after {
+.category-header ul li:first-child::after {
   content: "\B7";
   display: inline-block;
   margin-left: 4px;
@@ -626,42 +712,54 @@ h2 a:hover {
 }
 
 .category-apps .category-header {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url('../images/android.jpg');
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 85%), url('../images/android.jpg');
   background-size: cover;
 }
 
 .category-gear .category-header {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url('../images/tesla_reveal.png');
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 85%),
+    url('../images/tesla_reveal.png');
   background-size: cover;
 }
 
 .category-tech .category-header {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url('../images/tesla_break.png');
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 85%),
+    url('../images/tesla_break.png');
   background-size: cover;
 }
 
 .category-creative .category-header {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url('../images/make_games.jpg');
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 85%),
+    url('../images/make_games.jpg');
   background-size: cover;
 }
 
 .category-podium .category-header {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url('../images/ios13.png');
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 85%), url('../images/ios13.png');
   background-size: cover;
 }
 
 .category-insights .category-header {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url('../images/bitcoin_dwight.jpg');
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 85%),
+    url('../images/bitcoin_dwight.jpg');
   background-size: cover;
 }
 
 .category-launch .category-header {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url('../images/amazon_grocery.jpg');
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 85%),
+    url('../images/amazon_grocery.jpg');
   background-size: cover;
 }
 
 .category-distract .category-header {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 85%), url('../images/tesla_break.png');
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 85%),
+    url('../images/tesla_break.png');
   background-size: cover;
 }
 
@@ -671,7 +769,7 @@ h2 a:hover {
   grid-template-rows: 96px auto;
   height: 96px;
   margin: 2px 0;
-  background-color: rgba(255,68,34,.06);
+  background-color: rgba(255, 68, 34, 0.06);
 }
 
 .category-latest header {
@@ -698,7 +796,7 @@ h2 a:hover {
 }
 
 .category-latest header h4 a:hover {
-  box-shadow: inset 0 -1px 0 rgba(255,68,34,.2);
+  box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.2);
 }
 
 .category-latest-img img {
@@ -707,17 +805,7 @@ h2 a:hover {
   object-fit: cover;
 }
 
-.more-from-category li {
-  display: block;
-  position: relative;
-  padding: 6px 0 6px 14px;
-  font-family: sans-serif;
-  font-size: 13px;
-  line-height: 1.5;
-  border-bottom: 1px solid #eee;
-}
-
-.more-from-category li:before {
+.more-from-category li::before {
   position: absolute;
   top: 13px;
   left: 0;
@@ -727,14 +815,6 @@ h2 a:hover {
   width: 4px;
   background-color: #f42;
   border-radius: 50%;
-}
-
-.more-from-category li a {
-  color: #555;
-}
-
-.more-from-category li a:hover {
-  color: #000;
 }
 
 @media screen and (max-width: 1000px) {
@@ -770,27 +850,6 @@ h2 a:hover {
   margin: 0 20px 30px 20px;
 }
 
-.latest-deals header h2 a {
-  margin-bottom: 14px;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.latest-deals header a {
-  font-size: 16px;
-  color: #f42;
-  font-family: sans-serif;
-}
-
-.latest-deals header a:hover {
-  color: #000;
-}
-
-.latest-deals-item {
-  position: relative;
-  height: auto;
-}
-
 .discount {
   position: absolute;
   top: 0;
@@ -809,19 +868,6 @@ h2 a:hover {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.latest-deals-item a img {
-  width: 100%;
-  height: auto;
-}
-
-.latest-deals-item a {
-  color: #000;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
 }
 
 .latest-deals-item a h4 {
@@ -892,7 +938,6 @@ h2 a:hover {
   }
 }
 
-
 /* Footer */
 
 .footer-links {
@@ -909,36 +954,9 @@ h2 a:hover {
   text-align: center;
 }
 
-.social li {
-  padding: 6px;
-}
-
-.social li img {
-  border-radius: 50%;
-}
-
-.social li img:hover {
-  opacity: 0.5;
-}
-
 .footer-nav {
   margin-top: 21px;
   text-align: center;
-}
-
-.footer-nav li {
-  margin: 0 6px;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 12px;
-}
-
-.footer-nav li a {
-  color: #aaa;
-}
-
-.footer-nav li a:hover {
-  color: #fff;
 }
 
 .copyright {
